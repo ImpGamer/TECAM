@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.images.controllers.CursosController">
+    <TabPane fx:id="parentTabPane" layoutX="117.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" side="RIGHT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Tab fx:id="cursoTab" style="-fx-border-color: white; -fx-border-width: 2px 2px 0px 2px;" text="Agregar Curso">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="91.0" prefHeight="76.0" prefWidth="366.0" text="NUEVO CURSO" textAlignment="CENTER" underline="true">
+                    <font>
+                        <Font name="Impact" size="60.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="titulo_txt" layoutX="39.0" layoutY="268.0" prefHeight="29.0" prefWidth="235.0" />
+                <Label layoutX="38.0" layoutY="238.0" prefHeight="18.0" prefWidth="236.0" text="Nombre (Titulo):">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="precio_txt" layoutX="479.0" layoutY="268.0" prefHeight="29.0" prefWidth="170.0" />
+                <Label layoutX="479.0" layoutY="238.0" prefHeight="18.0" prefWidth="236.0" text="Precio:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="imgURL_txt" layoutX="38.0" layoutY="407.0" prefHeight="29.0" prefWidth="611.0" />
+                <Label layoutX="38.0" layoutY="377.0" prefHeight="18.0" prefWidth="236.0" text="URL Imagen:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="560.0" layoutY="451.0" onAction="#verImagenURL" style="-fx-background-color: #5c5bb5;" text="Ver Imagen" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <ImageView fx:id="imagenURL" fitHeight="150.0" fitWidth="200.0" layoutX="664.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="errrorImageLbl" layoutX="39.0" layoutY="443.0" prefHeight="20.0" prefWidth="378.0" textFill="#ff0606">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <JFXComboBox fx:id="materiasEnfocadas" focusColor="#e41f1f" layoutX="78.0" layoutY="549.0" prefHeight="35.0" prefWidth="156.0" />
+                <Label layoutX="78.0" layoutY="516.0" prefHeight="18.0" prefWidth="236.0" text="Enfocada A:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="60.0" prefWidth="871.0" style="-fx-background-color: linear-gradient(to right, blue, gold);" AnchorPane.bottomAnchor="840.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <JFXComboBox fx:id="profesoresCB" focusColor="#e41f1f" layoutX="436.0" layoutY="546.0" prefHeight="35.0" prefWidth="156.0" />
+                <Label layoutX="436.0" layoutY="516.0" prefHeight="18.0" prefWidth="236.0" text="Profesor:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <DatePicker fx:id="fechaInicio" layoutX="60.0" layoutY="698.0" />
+                <JFXButton buttonType="RAISED" layoutX="732.0" layoutY="832.0" onAction="#salir" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #ad1121;" text="Salir" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+                <Label layoutX="60.0" layoutY="668.0" prefHeight="18.0" prefWidth="236.0" text="Fecha de Inicio:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="btnLimpiar" buttonType="RAISED" layoutX="82.0" layoutY="831.0" prefHeight="34.0" prefWidth="148.0" style="-fx-background-color: #f2e855;" text="Limpiar">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+                <JFXTextArea fx:id="descripcion_txt" layoutX="306.0" layoutY="636.0" prefHeight="221.0" prefWidth="378.0" style="-fx-border-color: black;" />
+                <Label layoutX="306.0" layoutY="606.0" prefHeight="18.0" prefWidth="236.0" text="Descripcion:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="82.0" layoutY="769.0" onAction="#guardarCurso" prefHeight="34.0" prefWidth="148.0" style="-fx-background-color: #22e376;" text="Guardar Curso" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Label fx:id="errorTitle" layoutX="38.0" layoutY="315.0" prefHeight="17.0" prefWidth="242.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorPrice" layoutX="476.0" layoutY="307.0" prefHeight="17.0" prefWidth="242.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </AnchorPane>
+        </Tab>
+        <Tab style="-fx-border-color: blue; -fx-border-width: 2px 2px 0px 2px;" text="Gestor Cursos">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                <ScrollPane layoutX="17.0" layoutY="56.0" prefHeight="830.0" prefWidth="847.0" style="-fx-border-color: #4959e6; -fx-padding: 6px; -fx-border-width: 4px;">
+                    <VBox fx:id="coursesConteiner" prefHeight="856.0" prefWidth="827.0" style="-fx-background-color: #b8bab9;" />
+                </ScrollPane>
+            <Label alignment="CENTER" layoutX="245.0" layoutY="7.0" prefHeight="33.0" prefWidth="382.0" text="Cursos Almacenados">
+               <font>
+                  <Font name="Impact" size="34.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="LinkWeb" alignment="CENTER" layoutX="662.0" layoutY="15.0" prefHeight="27.0" prefWidth="151.0" style="-fx-background-color: #111e99;" text="Ver Pagina Cursos" textFill="WHITE">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="15.0" />
+               </font>
+            </Hyperlink>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="78.0" layoutY="14.0" onAction="#setGraphicCourses" prefHeight="27.0" prefWidth="159.0" style="-fx-border-color: white;                        -fx-background-color: black; -fx-border-radius: 5px;" text="Actualizar Elementos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            </AnchorPane>
+        </Tab>
+        <Tab fx:id="profesorTab" style="-fx-border-color: #635a59; -fx-border-width: 2px 2px 0px 2px;" text="Agregar Profesor">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <HBox prefHeight="60.0" prefWidth="871.0" style="-fx-background-color: linear-gradient(to right, blue, gold);" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="196.0" layoutY="99.0" prefHeight="76.0" prefWidth="479.0" text="AGREGAR PROFESOR" textAlignment="CENTER" underline="true">
+                    <font>
+                        <Font name="Impact" size="60.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nombreProf" layoutX="70.0" layoutY="299.0" prefHeight="24.0" prefWidth="201.0" />
+                <Label layoutX="70.0" layoutY="269.0" prefHeight="30.0" prefWidth="212.0" text="Nombre (Completo):">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="edadProf" layoutX="70.0" layoutY="453.0" prefHeight="24.0" prefWidth="201.0" />
+                <Label layoutX="70.0" layoutY="423.0" prefHeight="20.0" prefWidth="188.0" text="Edad:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="216.0" fitWidth="274.0" layoutX="543.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@static/images/add_professor.jpg" />
+                </ImageView>
+                <JFXButton alignment="CENTER" layoutX="70.0" layoutY="651.0" onAction="#guardarProfesor" prefHeight="31.0" prefWidth="213.0" style="-fx-background-color: #339426; -fx-background-radius: 10px;" text="Guardar Profesor" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+                <HBox layoutY="840.0" prefHeight="60.0" prefWidth="871.0" style="-fx-background-color: linear-gradient(to right, blue, gold);" />
+            <Label fx:id="errorName" layoutX="70.0" layoutY="341.0" prefHeight="17.0" prefWidth="309.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="errorAge" layoutX="70.0" layoutY="485.0" prefHeight="17.0" prefWidth="309.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="telefonoProf" layoutX="70.0" layoutY="562.0" prefHeight="24.0" prefWidth="201.0" />
+            <Label layoutX="70.0" layoutY="532.0" prefHeight="20.0" prefWidth="188.0" text="Telefono:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="315.0" layoutY="651.0" onAction="#limpiarTodo" prefHeight="31.0" prefWidth="213.0" style="-fx-background-color: #f2e530; -fx-background-radius:                        10px;" text="Borrar Todo">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </AnchorPane>
+        </Tab>
+        <Tab style="-fx-border-color: #f0ff1f; -fx-border-width: 2px 2px 0px 2px;" text="Gestor Profesores">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <HBox prefHeight="60.0" prefWidth="871.0" style="-fx-background-color: linear-gradient(to right, blue, gold);" />
+                <Label alignment="CENTER" layoutX="223.0" layoutY="74.0" prefHeight="40.0" prefWidth="425.0" text="Profesores Almacenados">
+                    <font>
+                        <Font name="Impact" size="32.0" />
+                    </font>
+                </Label>
+                <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="49.0" layoutY="81.0" onAction="#setGraphicTeachers" prefHeight="25.0" prefWidth="174.0" ripplerFill="#cd2d2d" style="-fx-background-color: black; -fx-background-radius: 20px;" text="Actualizar Elementos" textFill="WHITE">
+                    <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <ScrollPane layoutX="16.0" layoutY="127.0" prefHeight="759.0" prefWidth="838.0">
+                    <VBox fx:id="teachersContainer" prefHeight="735.0" prefWidth="840.0" />
+                </ScrollPane>
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+</AnchorPane>

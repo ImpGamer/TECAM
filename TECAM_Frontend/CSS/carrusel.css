@@ -1,0 +1,25 @@
+.slider-container {
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+}
+.arrows{
+    width: 40%;
+    height: 30%;
+}
+.image-container {
+    height: 100%;
+    width: 60vw;
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+}
+
+#change-image {
+    width: 100%; /* Haz que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantén la proporción original de la imagen */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+
+.arrows:hover {
+    cursor: pointer;
+}

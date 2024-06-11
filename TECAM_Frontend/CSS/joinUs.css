@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap');
+.principal-image {
+    filter: drop-shadow(20px 10px rgba(0,0,0,0.5));
+}
+.principal-image > img {
+    border-radius: 10px;
+    border-color: #30ab86;
+    border-width: 8px;
+    border-style: solid;
+}
+.title-page {
+    font-size: 5rem;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.subtitle-page {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.parraf {
+    font-size: 20px;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.space-text {
+    letter-spacing: 2px;
+}
+.list {
+    list-style: none;
+    justify-content: center;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+}
+.list li {
+    font-size: 2rem;
+    margin-top: 5px;
+    color: snow;
+}
+.contact-us {
+    margin-top: 10vh;
+}

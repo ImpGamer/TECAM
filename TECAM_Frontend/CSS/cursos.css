@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Space+Grotesk:wght@300..700&display=swap');
+.bk-most-value {
+  background: linear-gradient(to right, #1e5799 0%,#2ce0bf 19%,#76dd2c 40%,#dba62b 60%,#e02cbf 83%,#1e5799 100%); 
+  background-size: 10000px 100%;
+  animation: bg 15s linear infinite;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-bottom: 10px;
+}
+@keyframes bg {
+    0% {
+      background-position-x: 0;
+    }
+    
+    100% {
+      background-position-x: 10000px;
+    }
+  }
+.text-most-valued {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+#most-valued {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-course {
+  width: 600px;
+  height: 200px;
+  margin-bottom: 60vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), /* Adding shadow effect */
+              0 6px 20px rgba(0, 0, 0, 0.6);
+}
+.principal-text-courses {
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(90deg, blue, gold);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.destacate-course {
+  max-width: 600px;
+  margin: 0 auto;
+}

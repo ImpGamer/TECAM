@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-abcdefgh1234567890..." crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./CSS/carrusel.css">
+    <link rel="stylesheet" href="./CSS/every.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/loader.css">
+    <link rel="stylesheet" href="./CSS/slider.css">
+    <title>TECNAM | Aprende Tecnologia</title>
+</head>
+<body>
+  <div class="loading">
+    <div class="waves"></div>
+  </div>
+
+  <div class="container has-text-centered" style="background-color: #4d4b47;" id="loader_text">
+  </div>
+
+  <div class="movil-menu hide">
+    <a href="index.html" class="navbar-item">
+      <span class="icon">
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </span>
+      <span>Inicio</span>
+    </a>
+    <a class="navbar-item" href="cursos.html">
+      <span class="icon">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      </span>
+      <span>Cursos</span>
+    </a>
+    <a class="navbar-item" href="joinUS.html">
+      <span class="icon">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </span>
+      <span>Únete a nosotros</span>
+    </a>
+    <a class="navbar-item button is-black" href="#">
+      <span class="icon">
+        <i class="fab fa-github"></i>
+      </span>
+      <span>Repositorio</span>
+    </a>
+  </div>
+
+    <header style="display: none;">
+        <article>
+            <section class="hero is-info is-large">
+                <div class="hero-head">
+                    <div class="notification is-primary animate__animated animate__slideInLeft is-size-5">
+                        <button class="delete"></button>
+                        ¿Ya te enteraste de los nuevos cursos? Aun no!? que esperas para darles un vistazo: <a href="cursos.html" class="has-text-link has-text-weight-bold">Ver Cursos</a>
+                    </div>
+                  <nav class="navbar" style="background-color: #59a2f0;">
+                    <div class="container">
+                      <div class="navbar-brand">
+                        <a class="navbar-item" href="index.html">
+                          <p class="link-logo">TECNAM</p>
+                        </a>
+                        <!--Menu hamburguesa-->
+                        <span class="navbar-burger" data-target="navbarMenuHeroB">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </div>
+                      <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                          <a class="navbar-item" href="index.html">
+                            Inicio
+                          </a>
+                          <a href="cursos.html" class="navbar-item">
+                            Cursos
+                          </a>
+                          <a href="joinUS.html" class="navbar-item">
+                            Únete a nosotros
+                          </a>
+                          <span class="navbar-item">
+                            <a class="button is-info is-inverted">
+                              <span class="icon">
+                                <i class="fab fa-github"></i>
+                              </span>
+                              <span>Repositorio</span>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              
+                <!-- <div class="hero-body"> -->
+                  <div class="container has-text-centered">
+                    <h2>TEC NAM</h2>
+                    <progress class="progress is-primary" max="100"></progress>
+                  </div>
+
+                  <div class="slider-container columns is-mobile">
+                    <div class="column">
+                        <img src="assets/images/flecha-izq.png" alt="" class="arrows">
+                    </div>
+                    <div class="column">
+                      <div class="image-container">
+                        <img alt="slider-image" src="./assets/images/img_ritmo.jpg" id="change-image">
+                      </div>
+                    </div>
+                    <div class="column">
+                        <img src="assets/images/flecha-der.png" alt="" class="arrows">
+                    </div>
+                </div>
+                <div class="container">
+                  <p class="tag is-link is-large mb-3" id="image-text">Aprende lo que desees!</p>
+                </div>
+                </section>
+        </article> 
+    </header>
+    
+    <main style="display: none;">
+      <div class="mt-5 container has-text-centered">
+        <h2 class="title is-2 has-text-weight-bold">BIENVENIDO A TECNAM</h2>
+        <figure class="image is-128x128">
+
+        </figure>
+        <div class="container">
+          <p class="subtitle">
+            Te doy la bienvenida, somos TECNAM un grupo de estudiantes apasionados por la tecnologia y debido a esa pasion queremos compartir nuestros conocimientos a otros estudiantes
+            para que vean el increible mundo de la ciencia computacional, como a partir de procesos, algoritmos o tan siquiera escribir podemos llegar a crear cosas maravillosas y
+            funcionales a su vez.
+          </p><br>
+          <figure class="image is-128x128 is-centered">
+            
+          </figure><br>
+        </div>        
+        <div>
+          <p class="subtitle">Si estas aqui es porque te interesa la tecnologia y aprender mas sobre ella, cierto? Aqui encontraras cursos de todo tipo enfocado en la ciencia y tecnologia, domina todos sus aspectos desde los mas basicos hasta los avanzados, te prepararemos para alcanzar tus metas. No importa el rumbo, aqui llegara el curso que tanto
+            deseas.
+          </p>
+        </div>
+        <figure class="image is-128x128">
+
+        </figure>
+        <div>
+          <p class="subtitle">Los cursos que podras encontrar aqui son de:</p>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <span class="tag is-light is-medium has-text-weight-bold">Desarrollo Web</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-black is-medium has-text-weight-bold">Desarrollo Movil</span>
+              </div>
+              <div class="slide">                
+                <span class="tag is-info is-medium has-text-weight-bold">Desarrollo VideoJuegos</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-warning is-medium has-text-weight-bold">Lenguajes de programacion</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-danger is-medium has-text-weight-bold">Inteligencia artificial</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-primary is-medium has-text-weight-bold">Ciencia de datos</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-warning is-medium has-text-weight-bold">Realidad aumentada y virtual</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-success is-medium has-text-weight-bold">Sistemas operativos</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-link is-medium has-text-weight-bold">Redes</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-primary is-medium has-text-weight-bold">Electronica</span>
+              </div>
+              <div class="slide">
+                <span class="tag is-light is-medium has-text-weight-bold">Microcontroladores</span>
+              </div>
+            </div>
+          </div>
+          <h2 class="mt-3 title">Y MUCHOS MAS!</h2>
+          <p class="subtitle mt-3">asi que estate a tento de los cursos que saldran proximamente
+            te invitamos a contactarnos e inscribirte en alguno de ellos, los cursos van dirigido a cualquier persona. Estudiantes, profesionales, apasionados por la tecnologia, y quien
+            lo desee.</p><br>
+        </div>
+      </div>
+      <section class="hero is-medium is-info">
+        <div class="section is-medium">
+          <h1 class="title">Nuestros cursos</h1><br>
+          <p class="subtitle">Nuestros cursos seran impartidos en modalidad presencial o distancia, dependiendo como lo desee el <em>estudiante-profesor</em> que impartira dicho curso, ademas dentro de cada curso tendras acceso directo a un contacto de grupo para el curso o contacto directo con el <em>estudiante-profesor.</em> De esta manera se posee una gran comunicacion en caso de dudas, aclaraciones y porque no, incomodidades.</p><br>
+          <p class="subtitle">Publicaremos nuestros cursos con algunos dias de anticipacion a su fecha de inicio, se piensan publicar entre 5 a 7 cursos por mes de diferentes temas de tecnologia y ciencia. Esperamos en un futuro dirigirnos a otras areas como arte,sociales,administrativas,etc...</p>
+          <a href="cursos.html" class="button is-success is-light is-centered">Dirigite a los cursos!</a>
+        </div>
+      </section>
+      <section class="hero is-success">
+        <div class="section">
+          <h1 class="title">Precios</h1><br>
+          <p class="subtitle">Nuestros precios? <strong>DEMASIADO</strong> economicos! asi que no queda excusa para aprender ese tema que tanto deseas, tendras accesibilidad a todo por una minima cantidad, eso si, los cupos son muy limitados asi que comunicate lo antes posible. (El precio se ve reflejado en cada curso)</p>
+        </div>
+      </section>
+      <section class="hero is-danger">
+        <div class="section">
+          <h1 class="title">Valor</h1><br>
+          <p class="subtitle">Por el momento nuestros cursos al finalizarse o cursarlos no poseen un valor curricular, lo que queremos dejar en nuestros estudiantes es mas el aprendizaje en lugar de un papel. Ademas de convivencia, durante los cursos se tratara de emplear metodos y dinamicas para fortalecer las aptitudes del alumno, de esa manera no solamente se quedan con lo teorico, lo pondran a prueba en entornos de simulacion real. Esto se realiza de manera opcional pero siempre se les invitara pues es donde uno refleja lo aprendido, ademas de aprender aún mas!</p>
+        </div>
+      </section>
+
+      <div class="container has-text-centered mt-5">
+        <h2 class="title is-2 has-text-weight-bold">Con todos estos puntos, aun sigues teniendo dudas?</h2>
+        <p class="subtitle mt-5">No te preocupes, puedes contactarnos por los diferentes medios que dejamos acontinuacion, ademas de contactarnos puedes seguirnos o recomendarnos para que mas público pueda conocernos y formar una gran comunidad.</p>
+      </div>
+      <br>
+    </main>
+    <footer class="footer mt-5" style="display: none;">
+      <div class="content has-text-centered">
+        <p class="subtitle">Redes sociales:</p>
+        <p class="buttons is-centered">
+          <a href="https://discord.gg/wFtTRCRBP8" class="button is-link is-rounded" target="_blank">
+            <span class="icon">
+              <i class="fab fa-discord"></i>
+            </span>
+            <span>Discord</span>
+          </a>
+          <a href="mailto:impgamer333@gmail.com" class="button is-danger is-rounded">
+            <span class="icon">
+              <i class="fa-solid fa-paper-plane"></i>
+            </span>
+            <span>Gmail</span>
+          </a>
+          <a href="https://www.facebook.com/groups/438839758763677/?ref=share&mibextid=NSMWBT" class="button is-link is-rounded" target="_blank">
+            <span class="icon">
+              <i class="fa-brands fab fa-facebook"></i>
+            </span>
+            <span>Facebook</span>
+          </a>
+        </p>
+        <p class="subtitle is-3 has-text-weight-bold">SOMOS TECNAM</p>
+
+        <p><strong>TECNAM</strong> desarrollado por <a href="https://github.com/ImpGamer" target="_blank">ImpDev</a> y todos los derechos reservados a él. Página de entorno libre para quienes deseen agregar contenido <a href="#" target="_blank">Repositorio</a> &#169;2024.</p>
+      </div>
+    </footer>
+
+    <script src="./JS/loading.js"></script>
+    <script src="./JS/general.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
